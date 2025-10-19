@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Нұрасылдың Жеке Сайты</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #cceeff, #ffffff);
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .language-switcher {
+            text-align: right;
+            padding: 15px 25px 0 0;
+        }
+
+        .language-switcher button {
+            margin-left: 10px;
+            padding: 5px 12px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007acc;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .language-switcher button:hover {
+            background-color: #005fa3;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            background-color: #fff;
+            padding: 40px 20px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #007acc;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        .link-button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #007acc;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .link-button:hover {
+            background-color: #005fa3;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 14px;
+            color: #777;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                margin: 20px;
+                padding: 25px 15px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="language-switcher">
+        <button onclick="setLanguage('kk')">🇰🇿 Қазақша</button>
+        <button onclick="setLanguage('en')">🇬🇧 English</button>
+    </div>
+
+    <div class="container">
+        <h1 id="title">Сәлем! Мен — Нұрасыл</h1>
+
+        <div class="section">
+            <p id="age"><strong>Жасым:</strong> 17-де</p>
+            <p id="about"><strong>Мен жайлы:</strong> Бос уақытымда бассейнге барғанды ұнатамын.</p>
+            <p id="study"><strong>Білімім:</strong> Қазіргі уақытта "Ақпараттық жүйелер" бағыты бойынша 1-курс студентімін.</p>
+        </div>
+
+        <div class="section">
+            <p id="hobby"><strong>Сүйікті ісім туралы көбірек білгің келсе:</strong></p>
+            <a class="link-button" href="https://www.swimming.org" target="_blank" id="swim-btn">Бассейн және жүзу туралы</a>
+        </div>
+
+        <div class="section">
+            <p id="insta"><strong>Менің Instagram парақшам:</strong></p>
+            <a class="link-button" href="https://www.instagram.com/LOGIN_OSY_JERGE" target="_blank">Instagram</a>
+        </div>
+
+        <div class="footer">
+            © 2025 Нұрасылдың жеке сайты
+        </div>
+    </div>
+
+    <script>
+        const content = {
+            kk: {
+                title: "Сәлем! Мен — Нұрасыл",
+                age: "<strong>Жасым:</strong> 17-де",
+                about: "<strong>Мен жайлы:</strong> Бос уақытымда бассейнге барғанды ұнатамын.",
+                study: "<strong>Білімім:</strong> Қазіргі уақытта \"Ақпараттық жүйелер\" бағыты бойынша 1-курс студентімін.",
+                hobby: "<strong>Сүйікті ісім туралы көбірек білгің келсе:</strong>",
+                swimBtn: "Бассейн және жүзу туралы",
+                insta: "<strong>Менің Instagram парақшам:</strong>"
+            },
+            en: {
+                title: "Hello! I'm Nurassyl",
+                age: "<strong>Age:</strong> 17",
+                about: "<strong>About me:</strong> I enjoy going to the swimming pool in my free time.",
+                study: "<strong>Education:</strong> I'm currently a 1st-year student in the field of Information Systems.",
+                hobby: "<strong>If you'd like to know more about my hobby:</strong>",
+                swimBtn: "About Swimming",
+                insta: "<strong>My Instagram profile:</strong>"
+            }
+        };
+
+        function setLanguage(lang) {
+            document.getElementById("title").innerHTML = content[lang].title;
+            document.getElementById("age").innerHTML = content[lang].age;
+            document.getElementById("about").innerHTML = content[lang].about;
+            document.getElementById("study").innerHTML = content[lang].study;
+            document.getElementById("hobby").innerHTML = content[lang].hobby;
+            document.getElementById("swim-btn").innerText = content[lang].swimBtn;
+            document.getElementById("insta").innerHTML = content[lang].insta;
+        }
+    </script>
+</body>
+</html>
