@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Нұрасылдың жеке сайты – Ақпараттық жүйелер студенті және жүзуге қызығушылығы бар жас.">
+    <title>Нұрасылдың Жеке Сайты</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #cceeff, #ffffff);
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 40px 20px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #007acc;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        .link-button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #007acc;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .link-button:hover {
+            background-color: #005fa3;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 14px;
+            color: #777;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                margin: 20px;
+                padding: 25px 15px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Сәлем! Мен — Нұрасыл</h1>
+
+        <div class="section">
+            <p><strong>Жасым:</strong> 17-де</p>
+            <p><strong>Мен жайлы:</strong> Бос уақытымда бассейнге барғанды ұнатамын.</p>
+            <p><strong>Білімім:</strong> Қазіргі уақытта "Ақпараттық жүйелер" бағыты бойынша 1-курс студентімін.</p>
+        </div>
+
+        <div class="section">
+            <p><strong>Сүйікті ісім туралы көбірек білгің келсе:</strong></p>
+            <a class="link-button" href="https://www.swimming.org" target="_blank">Бассейн және жүзу туралы</a>
+        </div>
+
+        <!-- Instagram (логин нақты болмаса, сілтемені жой немесе логин қой) -->
+        <div class="section">
+            <p><strong>Менің Instagram парақшам:</strong></p>
+            <a class="link-button" href="https://www.instagram.com/LOGIN_OSY_JERGE" target="_blank">Instagram</a>
+            <!-- LOGİN_OSY_JERGE деген жерге өз логиніңді қой -->
+        </div>
+
+        <div class="footer">
+            © 2025 Нұрасылдың жеке сайты
+        </div>
+    </div>
+</body>
+</html>
